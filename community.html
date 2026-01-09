@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <a href = "index.html">
+      <img src="logo.png" alt="Horizon Logo" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="#">Community</a>
+          <ul>
+            <li><a href="community.html" target="_blank">Testimonials</a></li>
+          </ul>
+        </li>
+        <li><a href="schedule.html" target="_blank">Schedule</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button class="donate-btn">Donate</button>
+      <span class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-times"></i></a>
+      </span>
+    </div>
+  </header>
+  <section class="testimonials-section">
+    <div class="test-head">
+      <h1>Student Testimonials</h1>
+    </div>
+  
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+  
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-content">
+            <img src="" alt="Profile" class="profile-img">
+            <div class="text">
+              <h3>Alex P. - High School Student</h3>
+              <p>
+                "Meeting with a counselor here gave me the tools to manage my anxiety. I learned how to recognize my triggers and use coping strategies that actually work in real life."
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-content">
+            <img src="" alt="Profile" class="profile-img">
+            <div class="text">
+              <h3>Sara L. - College Freshman</h3>
+              <p>
+                "Learning about mental health through the program helped me understand myself better. Talking to a doctor regularly has made me feel supported and less alone."
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-content">
+            <img src="" alt="Profile" class="profile-img">
+            <div class="text">
+              <h3>Jordan M. - Teen Advocate</h3>
+              <p>
+                "I used to struggle with stress and depression. Attending sessions and learning coping strategies helped me feel in control of my mental health for the first time."
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-content">
+            <img src="" alt="Profile" class="profile-img">
+            <div class="text">
+              <h3>Emily R. - Senior</h3>
+              <p>
+                "The program taught me the importance of self-care and seeking help when needed. Talking with doctors and peers helped me build a healthy mindset."
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-content">
+            <img src="placeholderpic.jpg" alt="Profile" class="profile-img">
+            <div class="text">
+              <h3>Michael T. - College Student</h3>
+              <p>
+                "Learning about mental health made a huge difference in my life. Understanding my emotions and having access to professional support has improved my relationships and school performance."
+              </p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        autoplay: { delay: 5000, disableOnInteraction: false }
+      });
+    </script>
+  </section>
+  
+    
+  <footer>
+  <div class="footer-top">
+    <!-- Column 1: Logo + Info -->
+    <div class="footer-column footer-info-col">
+      <div class="footer-logo">
+        <img src="logo_transparent.png" alt="School Logo">
+      </div>
+      <div class="footer-info">
+        <address>
+          <strong>9th & 10th Grade Building</strong><br>
+          1070 Morse Rd., Columbus, OH 43229<br><br>
+
+          <strong>11th & 12th Grade Building</strong><br>
+          3692 Corporate Dr., Columbus, OH 43231<br><br>
+
+          <strong>Phone:</strong> <a href="tel:+15551234567">(614) 846-7616</a><br>
+          <strong>Fax:</strong> (614) 846-7696<br>
+          <strong>Email:</strong> <a href="mailto:info@hsach.org">info@hsach.org</a>
+        </address>
+      </div>
+    </div>
+
+    <!-- Column 2: Map 1 -->
+    <div class="footer-column footer-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48857.48149199368!2d-83.0672414513672!3d40.062191899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388b7dcf242fd1%3A0x3856fdf40f8e77da!2sHorizon%20Science%20Academy%20Columbus%20STEM%20High%20School%20(9-10%20Grades)!5e0!3m2!1sen!2sus!4v1759163143735!5m2!1sen!2sus" 
+      style="width: 500px; margin-right: 10px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48845.23514320307!2d-82.99994035136719!3d40.07926649999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388b54352bdcf9%3A0x3e1b0a97ea22e69c!2sHorizon%20Science%20Academy%20Columbus%20High%20School%20(11-12)!5e0!3m2!1sen!2sus!4v1759163161850!5m2!1sen!2sus" 
+      style="width: 500px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Horizon Science Academy. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
+
